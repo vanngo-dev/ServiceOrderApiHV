@@ -15,9 +15,12 @@ public class ServiceOrder
     [Required]
     public string TechnicianName {get;set;} = string.Empty;
 
+    [Required]
     [StringLength(1000)]
     public string Description {get;set;} = string.Empty;
 
+
+    [Required]
     [StringLength(20)]
     public string Status {get;set;} = "Pending";
 

@@ -16,6 +16,7 @@ public class Customer
     public string Phone {get;set;} = string.Empty;
 
     [EmailAddress]
+    [StringLength(100)]
     public string? Email {get;set;} 
 
     [StringLength(200)]
